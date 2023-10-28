@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "VeriFire",
+  "version": "1.0",
+  "description": "Getting you one step closer to burning down fake news and misinformation.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "ext.html"
+  },
+  "permissions": ["scripting", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": ["extract_text.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

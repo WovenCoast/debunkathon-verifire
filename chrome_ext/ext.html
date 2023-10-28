@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 0;
+    border-radius: 0;
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- allow unsafe scripts -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'unsafe-inline';"
+    /> -->
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="styles/Animated.css" />
+    <!-- Never gonna give you up. Never gonna let you down. Never gonna run around and
+    desert you. -->
+  </head>
+  <body>
+    <div class="pophead">
+      <!-- <img src="/chrome_ext/images/icon-48.png" alt="icon" /> -->
+      <img src="images/icon-48.png" alt="icon" float="left" />
+      VeriFire
+    </div>
+    <div class="popbody">
+      <div class="poptext" id="selection-text">
+        Select a piece of text from the website and click the fact check button!
+      </div>
+      <hr />
+
+      <!-- script control-->
+      <button id="fact-check-button">FACT CHECK</button>
+
+      <hr />
+      <div class="popstatus" id="status"></div>
+      <div id="links-list"></div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
